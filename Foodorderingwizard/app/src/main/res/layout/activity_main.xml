@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            android:text="FastFood Order Wizard"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Main Meal" />
+
+        <Button
+            android:id="@+id/btnSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Side Dishes" />
+
+        <Button
+            android:id="@+id/btnDrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Drink" />
+
+        <TextView
+            android:id="@+id/tvSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground"
+        android:visibility="gone" />
+</FrameLayout>
