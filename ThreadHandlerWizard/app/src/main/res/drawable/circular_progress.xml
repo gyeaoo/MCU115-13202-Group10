@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 底圈（灰色） -->
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.6"
+            android:thicknessRatio="14"
+            android:useLevel="false">
+            <solid android:color="#BDBDBD" />
+        </shape>
+    </item>
+
+    <!-- 進度圈（漸層），從 12 點鐘方向開始 -->
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape
+                android:shape="ring"
+                android:innerRadiusRatio="2.6"
+                android:thicknessRatio="14"
+                android:useLevel="true">
+                <gradient
+                    android:type="sweep"
+                    android:startColor="#00BCD4"
+                    android:centerColor="#3F51B5"
+                    android:endColor="#6200EA" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
